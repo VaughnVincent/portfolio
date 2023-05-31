@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+        body {
+            background-color: #435daa;
+            margin: 150px 200px 50px 200px;
+        }
+
+        * {
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .col1 {
+            animation: transition-left 2s ease-in-out;
+            margin-right: 100px;
+        }
+
+        .col2 {
+            background-color: #f0f0f0;
+            padding: 10px 30px 10px 30px;
+            animation: transition-right 2s ease-in-out;
+        }
+
+        .col1 img{
+            width: 225px;
+        }
+
+        h2,
+        h3 {
+            background-color: #f0f0f0;
+            color: #210062;
+            padding: 0;
+            text-align: center;
+        }
+
+        .col2 p {
+            text-align: justify;
+            font-size: 14px;
+        }
+
+        h3 {
+            margin-top: -15px;
+        }
+
+        .back {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: transparent;
+            border: 5px solid #009FBD;
+            color: white;
+            border-radius: 100px;
+            transition: background 1s ease;
+            animation: transition-right 1s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #009FBD;
+            cursor: pointer;
+        }
+
+        img{
+            width: 225px;
+        }
+
+        @keyframes transition-left {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0%;
+            }
+
+            100% {
+                transform: translateX(0%);
+                opacity: 100%;
+            }
+        }
+
+        @keyframes transition-right {
+            0% {
+                transform: translateX(100%);
+                opacity: 0%;
+            }
+
+            100% {
+                transform: translateX(0%);
+                opacity: 100%;
+            }
+        }
+
+        @media (max-width: 800px){
+            body{
+                margin: 25px;
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <div class="col1">
+            <img src="1685495443534-modified.png" alt="My Cartoon Picture">
+        </div>
+        <div class="col2">
+            <h2>Vaughn Vincent Lucky Borja</h2>
+            <h3>Web Designer</h3>
+            <p>Hello, I'm Vaughn Vincent Lucky Borja, a motivated and enthusiastic Web Designer seeking to join a
+                dynamic team of professionals.
+            </p>
+            <p>I am a strong collaborator and team player, working effectively with cross-functional teams to deliver
+                projects on time and to the highest quality. My communication skills and attention to detail have been
+                key to my success in delivering successful projects. As an individual, I am highly organized,
+                detail-oriented and committed to continuous learning and improvement. I thrive in fast-paced and dynamic
+                environments and always strive to deliver excellence in everything I do. If you are looking for a
+                talented web designer with a proven track record of success, then I would be delighted to discuss
+                how I can contribute to your team.</p>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="index.html">
+            <button>Back</button>
+        </a>
+    </div>
+</body>
+
+</html>

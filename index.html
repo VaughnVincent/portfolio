@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+        * {
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 20px 0 20px;
+        }
+
+        .header .right a:nth-last-of-type(1) {
+            margin-left: 10px;
+        }
+
+        .header .right a {
+            text-decoration: none;
+            color: #19376D;
+        }
+
+        .header .left {
+            display: flex;
+            align-items: center;
+            animation: transition-left 2s ease-in-out;
+        }
+
+        .header .right {
+            animation: transition-right 2s ease-in-out;
+        }
+
+        .header .left p {
+            margin-left: 10px;
+        }
+
+        .header .right a button {
+            padding: 10px 20px;
+            border-radius: 100px;
+            border: 1px solid #6d1962;
+            transition: background 1s ease;
+            background: transparent;
+        }
+
+        .header .right a button:hover {
+            background: #6d1962;
+            cursor: pointer;
+            color: white;
+        }
+
+        .header .right a:hover {
+            text-decoration: underline;
+        }
+
+        .info {
+            display: grid;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .info * {
+            text-align: center;
+        }
+
+        .info img {
+            margin-top: 50px;
+            animation: transition-right 3s ease-in-out;
+        }
+
+        .info h2 {
+            font-size: 20px;
+            animation: transition-left 3s ease-in-out;
+        }
+
+        .info p {
+            font-size: 16px;
+            animation: transition-left 3s ease-in-out;
+        }
+
+        .left img{
+            width: 50px;
+        }
+
+        .info img{
+            width: 225px;
+        }
+        @keyframes transition-left {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0%;
+            }
+
+            100% {
+                transform: translateX(0%);
+                opacity: 100%;
+            }
+        }
+
+        @keyframes transition-right {
+            0% {
+                transform: translateX(100%);
+                opacity: 0%;
+            }
+
+            100% {
+                transform: translateX(0%);
+                opacity: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="1685495443534-modified.png" alt="Profile">
+            <p>Vaughn Vincent Lucky Borja</p>
+        </div>
+        <div class="right">
+            <a href="contacts.html">Hire Me</a>
+            <a href="about.html">
+                <button>Say Hello</button>
+            </a>
+        </div>
+    </div>
+    <div class="info">
+        <h2>Web Designer</h2>
+        <p>I Design and Code Web Pages</p>
+        <img src="1685495443534-modified.png" alt="My Cartoon Picture">
+    </div>
+</body>
+
+</html>
